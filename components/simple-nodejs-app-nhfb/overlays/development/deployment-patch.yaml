@@ -1,0 +1,17 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  creationTimestamp: null
+  name: simple-nodejs-app-nhfb
+spec:
+  selector: {}
+  strategy: {}
+  template:
+    metadata:
+      creationTimestamp: null
+    spec:
+      containers:
+      - image: quay.io/redhat-appstudio-qe/e2e-demos-ihxd-tenant/nodejs-users/simple-nodejs-app-nhfb@sha256:ce0cc688da68b4cc5de033e343be34a0667ab1a39ac62ecff902b392bfdea7ab
+        name: my-nodejs
+        resources: {}
+status: {}
